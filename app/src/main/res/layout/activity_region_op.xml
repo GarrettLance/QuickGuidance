@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegionOp.RegionOpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.guolong.quickguidance.RegionOp.RegionOpView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            app:porter_duff_style="第一次clip区域" />
+
+        <com.guolong.quickguidance.RegionOp.RegionOpView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            app:porter_duff_style="第二次clip区域" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.guolong.quickguidance.RegionOp.RegionOpView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            app:porter_duff_style="DIFFERENCE" />
+
+        <com.guolong.quickguidance.RegionOp.RegionOpView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            app:porter_duff_style="INTERSECT" />
+
+        <com.guolong.quickguidance.RegionOp.RegionOpView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            app:porter_duff_style="REPLACE" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.guolong.quickguidance.RegionOp.RegionOpView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            app:porter_duff_style="REVERSE_DIFFERENCE" />
+
+        <com.guolong.quickguidance.RegionOp.RegionOpView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            app:porter_duff_style="UNION" />
+
+        <com.guolong.quickguidance.RegionOp.RegionOpView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            app:porter_duff_style="XOR" />
+
+    </LinearLayout>
+
+</LinearLayout>

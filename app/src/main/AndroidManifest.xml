@@ -20,8 +20,11 @@
         </activity>
         <activity
             android:name=".PorterDuff.PorterDuffActivity"
-            android:label="PorterDuffActivity"/>
+            android:label="PorterDuffActivity" />
         <activity android:name=".FileOption.FileActivity"></activity>
+        <activity
+            android:name=".RegionOp.RegionOpActivity"
+            android:hardwareAccelerated="false"></activity>
     </application>
 
 </manifest>

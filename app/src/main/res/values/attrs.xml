@@ -5,4 +5,8 @@
     <declare-styleable name="PorterDuffView">
         <attr name="porter_duff_style" />
     </declare-styleable>
+
+    <!--<declare-styleable name="RegionOpView">-->
+        <!--<attr name="port_duff_style" />-->
+    <!--</declare-styleable>-->
 </resources>
