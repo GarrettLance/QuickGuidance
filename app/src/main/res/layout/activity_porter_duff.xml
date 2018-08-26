@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PorterDuff.PorterDuffActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8BC5BA"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="source and destination"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Source" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Destination" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Alpha compositing modes"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Source over" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Source in" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Source Atop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Destination Over" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Destination In" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Destination Atop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Clear" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Source Out" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Destination Out" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Exclusive Or" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Blending modes"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Darken" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Lighten" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Multiply" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Screen" />
+
+            <com.guolong.quickguidance.PorterDuff.PorterDuffView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                custom:porter_duff_style="Overlay" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
