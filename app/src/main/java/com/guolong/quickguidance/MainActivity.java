@@ -15,6 +15,7 @@ import com.guolong.quickguidance.FileOption.FileActivity;
 import com.guolong.quickguidance.PorterDuff.PorterDuffActivity;
 import com.guolong.quickguidance.RegionOp.RegionOpActivity;
 import com.guolong.quickguidance.base.BaseActivity;
+import com.guolong.quickguidance.interpolator.InterpolatorActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +42,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
         mList.add(new Wrapper(PorterDuffActivity.class, "PorterDuff.Mode效果"));
         mList.add(new Wrapper(FileActivity.class, "文件操作相关方法"));
         mList.add(new Wrapper(RegionOpActivity.class, "Region.Op剪裁效果"));
+        mList.add(new Wrapper(InterpolatorActivity.class, "插值器"));
     }
 
     @Override
